@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    android:id="@+id/rlt_layout"
+    tools:context=".Activities.MyTripsActivity">
+
+
+    <Button
+        android:id="@+id/imageBtnPlus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/ic_add"
+        android:onClick="create_destination_click"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listView_trips"
+    android:layout_margin="10dp"
+    android:background="#fff"
+    android:dividerHeight="10sp"
+    >
+
+    </ListView>
+
+</RelativeLayout>

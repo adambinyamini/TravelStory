@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9B9696"
+    tools:context=".Activities.DateRangeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_titleOfCalender"
+        android:textSize="30sp"
+        android:textColor="#527897"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_subTitleCalender"
+        android:layout_below="@+id/txt_titleOfCalender"
+        android:textSize="20sp"
+        android:textColor="#527897"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Click Date Range"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txt_subTitleCalender"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/btn_next"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_from"
+            android:text="From"
+            android:onClick="click_from"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_to"
+            android:text="to"
+            android:onClick="click_to"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="step\n 2/4"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_nextDateRange"
+        android:src="@drawable/btn_next"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="click_nextToDestination"
+
+        />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_cancel"
+        android:src="@drawable/ic_back"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="cancel_onClick"
+        />
+
+
+
+</RelativeLayout>

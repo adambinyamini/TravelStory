@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    android:id="@+id/tripImageId"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/scroll_gallery"
+        android:scrollbars="horizontal"
+        android:background="#fff"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/imageItem_1"
+                android:src="@drawable/el_nido"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:onClick="click_imageTrip"
+                />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/el_nido_resort"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageItem_2"
+
+                />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/zipline_elnido"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageItem_3"
+
+                />
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nameTitle"
+        android:text="Our Honeymoon Philippines"
+        android:layout_below="@+id/scroll_gallery"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#4D3838"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_date"
+        android:text="12/08/19-26/08/19"
+        android:inputType="date"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txt_nameTitle"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_des"
+        android:text="El Nido"
+        android:inputType="date"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txt_date"
+        />
+
+
+    <ImageButton
+        android:id="@+id/imgWrite"
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="290dp"
+        android:layout_alignBaseline="@+id/txt_date"
+        android:onClick="write_Click"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_website" />
+
+    <ImageButton
+        android:id="@+id/imgDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@+id/txt_date"
+        android:layout_marginLeft="250dp"
+        android:onClick="delete_Click"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_delete" />
+
+
+
+
+
+
+</RelativeLayout>

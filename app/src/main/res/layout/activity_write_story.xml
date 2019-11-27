@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/design_notebook"
+    tools:context=".Activities.WriteStoryActivity">
+
+    <TextView
+        android:id="@+id/textTravelDiary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="Travel Story"
+        android:textColor="#1E343A"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@id/textTravelDiary"
+        android:layout_toRightOf="@+id/linear_editText"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_titleOfTrip_story"
+        android:layout_below="@id/textTravelDiary"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        tools:text="Our Honeymoon"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_dateRange"
+            tools:text="20/05/2019 25/05/2019"
+            android:layout_below="@+id/txt_titleTravelStory"
+            android:textSize="10sp"
+            android:fontFamily="casual"
+            android:textColor="#575151"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/txt_locStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="casual"
+            android:textColor="#575151"
+            android:textSize="25sp"
+            tools:text="Italy,Rome"
+            android:gravity="center"/>
+        <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_marginLeft="20dp"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="1"
+            android:isIndicator="false"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/img_writeStory"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow_back"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_editText"
+        android:layout_width="165dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/textTravelDiary"
+    >
+    <EditText
+        android:id="@+id/editTextDiary"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTravelDiary"
+        android:hint="Start write here..."
+        android:textSize="15sp"
+        android:fontFamily="casual" />
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="step\n 4/4"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_next"
+        android:src="@drawable/ic_complete"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="click_complete"
+        />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:id="@+id/btn_cancel"
+        android:src="@drawable/ic_back"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="cancel_onClick"
+        />
+
+</RelativeLayout>

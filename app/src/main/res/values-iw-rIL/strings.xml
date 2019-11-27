@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">יומן מסע</string>
+    <string name="ts_eliot">\"המסע,לא היעד - הוא העיקר\"</string>
+    <string name="click_to_write">"לחצו לרשום עכשיו "</string>
+    <string name="ts_eliotName">(טי.אס אליוט)</string>
+</resources>

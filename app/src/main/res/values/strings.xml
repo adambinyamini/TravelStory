@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Travel Story</string>
+    <string name="ts_eliot">..</string>
+    <string name="click_to_write">Click to Write</string>
+    <string name="travel_story">Travel Story</string>
+    <string name="ts_eliotName">ts_eliotName</string>
+    <string name="my_trips">My Trips :</string>
+    <string name="my_tripsBtn">My Trips</string>
+    <string name="title_activity_location_gallery">LocationGalleryActivity</string>
+</resources>
